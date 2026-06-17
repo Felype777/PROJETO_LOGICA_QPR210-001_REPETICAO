@@ -33,3 +33,53 @@ const inputNumRepeticao = document.querySelector('#num-repeticao')
 const btnFrase = document.querySelector('#btn-frase')
 const divFrase = document.querySelector('#div-frase')
 
+btnFrase.addEventListener('click' , (evt) => {
+    let numRepeti = Number(inputNumRepeticao.value)
+    let frase = inputFrase.value
+
+    for (i = 0;i < numRepeti; i++){
+        divFrase.innerHTML += `${i + 1} - ${frase} <br>`
+    }
+})
+
+//COLEÇÃO DE DADOS - ARRAY
+const presentes = ['Bicicleta', 'Celular', 'Camisa do Mengão', 'Doleira', 'tênis Adidas']
+
+const divArray = document.querySelector('#div-array')
+
+//divArray.innerHtml = presentes[6]
+
+for(i = 0;i < 5;i++ ){
+    divArray.innerHTML += `${presentes[i]} <br>`
+}
+
+//FOR IN
+const divForIn = document.querySelector('#div-forin')
+
+for(let posicao in presentes){
+ divForIn.innerHTML += `${presentes[posicao]} <br>`
+}
+
+//FOR OF
+const divForOf = document.querySelector('#div-forof')
+
+for (let elemento of presentes){
+    divForOf.innerHTML += `${elemento} <br>`
+}
+
+//FOREACH
+const divForeach = document.querySelector('#div-foreach')
+
+presentes.forEach((elemento, posicao)=>{
+    divForeach.innerHTML += `${posicao + 1} - ${elemento} <br>`
+})
+
+//COLEÇÃO DE OBJETOS LITERAIS - ARRAY
+const pessoas = [
+    {nome: 'Maria Flor', idade: 25, renda:8500},
+    {nome: 'Joerdson Souza', idade: 75, renda:5000},
+    {nome: 'Taoca', idade: 28, renda:500},
+    {nome: 'Chicó', idade: 36, renda:100},
+    {nome: 'Chicó', idade: 36, renda:100},
+    {nome: 'João Grilo', idade: 32, renda:80},
+]
