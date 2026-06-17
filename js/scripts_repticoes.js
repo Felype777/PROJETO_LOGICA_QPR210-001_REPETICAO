@@ -83,3 +83,10 @@ const pessoas = [
     {nome: 'Chicó', idade: 36, renda:100},
     {nome: 'João Grilo', idade: 32, renda:80},
 ]
+
+//LISTA OBJETO LITERAL PELO FOR
+const divlistaObjFor = document.querySelector('#div-listaobj-for')
+
+for(i = 0; i < pessoas.length;i++){
+    divlistaObjFor.innerHTML += `${pessoas[i].nome}, ${pessoas[i].idade} R$ ${pessoas[i].renda.toFixed(2).replace('.', ',')} <br>`
+}
