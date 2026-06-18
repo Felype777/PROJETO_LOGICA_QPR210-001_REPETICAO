@@ -106,7 +106,8 @@ pessoas.splice(2,2)
 //EXCLUIR O ÚLTIMO ELEMENTO DO ARRAY
 pessoas.pop()
 
-
+//EXIBIR A QUANTIDADE DE ELEMENTOS EM UM ARRAY
+console.log('TOTAL DE ELEMENTOS NO ARRAY pessoas ====> ', pessoas.length)
 //LISTA OBJETO LITERAL PELO FOR
 const divlistaObjFor = document.querySelector('#div-listaobj-for')
 
